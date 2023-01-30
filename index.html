@@ -10,6 +10,601 @@
     <script src="https://kit.fontawesome.com/a9cfb22cc3.js" crossorigin="anonymous"></script>
     <!-- stylesheet -->
     <link rel="stylesheet" href="/style.css">
+    <style>
+        /*===========================================
+                    FONTS 
+ ===========================================*/
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&family=Poppins:wght@500&display=swap');
+
+        /*===========================================
+                 COMMON STYLES OR
+  ===========================================*/
+
+
+        .all {
+            display: flex;
+            margin: 0px 0px;
+            padding: 0px;
+            align-items: flex-end;
+        }
+
+        .header {
+            background: rgba(255, 144, 14, 0.1);
+        }
+
+        .g3 {
+            margin-right: 450px;
+            margin-left: 150px;
+            padding-top: 10px;
+        }
+
+        nav li {
+            list-style: none;
+            margin-left: 51px;
+        }
+
+        nav ul {
+            display: flex;
+            font-weight: 500;
+            font-size: 18px;
+        }
+
+        .login {
+            padding-right: 70px;
+        }
+
+        .logo {
+            width: 40.42px;
+            height: 51px;
+        }
+
+
+
+        /*===========================================
+                 COMMON STYLES OR
+  ===========================================*/
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            background-color: #F3F1FF;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .container {
+            background-color: #ffffff;
+            width: 870px;
+            padding: 30px;
+            margin-top: 21px;
+            border-radius: 5px;
+        }
+
+
+
+        /*===========================================
+                TOP PLAYERS STYLES       
+  ===========================================*/
+
+
+
+        .section-title {
+            color: #131313;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 64px;
+            text-align: center;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .section-info {
+            text-align: center;
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: #727272;
+        }
+
+        .button-explore {
+            width: 130px;
+            height: 50px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 23px;
+            text-align: center;
+            color: #FFFFFF;
+            background-color: #FF900E;
+            margin-left: 600px;
+            padding: 0px;
+            font-size: 16px;
+            border-radius: 10px;
+            border: none;
+        }
+
+        .banner-img {
+            width: 1000px;
+            height: 500px;
+            border-radius: 8px;
+            align-items: center;
+            text-align: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 30px;
+
+        }
+
+        .future {
+            margin-top: 60px;
+        }
+
+        .team {
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            border-radius: 8px;
+            padding-left: 200px;
+            gap: 24px;
+            padding-top: 24px;
+            padding-bottom: 131px;
+            margin-left: 0px;
+            position: absolute;
+        }
+
+        .team img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .list {
+            width: 468px;
+            height: 106px;
+            font-weight: 500;
+            font-size: 45px;
+            padding-left: 670px;
+            margin-left: 0px;
+            padding-top: 80px;
+        }
+
+        .quick {
+            color: #727272;
+            font-weight: 500;
+        }
+
+        .our {
+            color: #131313;
+            font-weight: 700;
+        }
+
+        .features {
+            color: #FF900E;
+            font-weight: 700;
+        }
+
+        .lorem1 {
+            padding-left: 670px;
+            margin-left: 0px;
+            color: #727272;
+        }
+
+        .button-explore-more {
+            width: 130px;
+            height: 50px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 23px;
+            text-align: center;
+            color: #FFFFFF;
+            background-color: #FF900E;
+            margin-left: 600px;
+            padding: 0px;
+            font-size: 16px;
+            border-radius: 10px;
+            border: none;
+            margin-left: 670px;
+        }
+
+        .experience {
+            display: flex;
+        }
+
+        .love-enjoy {
+            padding-top: 169px;
+            margin-top: 0px;
+            padding-left: 0px;
+            margin-left: 170px;
+            color: #131313;
+            font-weight: 700;
+            font-size: 35px;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
+
+        .lorem2 {
+            font-weight: 400;
+            font-size: 16px;
+            color: #727272;
+            padding-left: 0px;
+            margin-left: 170px;
+            margin-top: 24px;
+            padding-top: 0px;
+            margin-bottom: 30px;
+        }
+
+        .border {
+            background: #FFFFFF;
+            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+            border-radius: 8px;
+            width: 586px;
+            height: 171px;
+            margin-left: 170px;
+            margin-top: 15px;
+        }
+
+        .desktop {
+            font-weight: 600;
+            font-size: 20px;
+            margin-left: 30px;
+            padding-left: 0px;
+            padding-top: 30px;
+            margin-top: 0px;
+
+
+        }
+
+        .lorem3 {
+            font-weight: 400;
+            font-size: 16px;
+            color: #727272;
+            padding-left: 0px;
+            margin-left: 30px;
+            margin-top: 0px;
+            padding-top: 0px;
+        }
+
+        .architects-img {
+            width: 500px;
+            height: 700px;
+            border-radius: 8px;
+            padding-top: 170px;
+            padding-left: 50px;
+        }
+
+        .button-year {
+            width: 340px;
+            height: 200px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            text-align: center;
+            color: #FFFFFF;
+            background-color: #FF900E;
+            margin-left: 110px;
+            margin-top: 60px;
+            font-size: 16px;
+            border-radius: 10px;
+            border: none;
+
+        }
+
+        .years {
+            font-weight: 700;
+            font-size: 65px;
+            color: #FFFFFF;
+        }
+
+        .exp {
+            font-weight: 500;
+            font-size: 25px;
+            color: #FFFFFF;
+        }
+
+        .some-fact {
+            font-weight: 700;
+            font-size: 45px;
+            color: #131313;
+            padding-left: 0px;
+            margin-left: 170px;
+        }
+
+        .lorem4 {
+            font-weight: 400;
+            font-size: 16px;
+            color: #727272;
+            padding-left: 0px;
+            margin-left: 170px;
+            margin-top: 0px;
+            padding-top: 0px;
+            margin-bottom: 30px;
+        }
+
+        .icons {
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+            margin-right: 10px;
+            margin-left: 0px;
+
+        }
+
+        .icon:hover {
+            transform: rotate(360deg);
+            transition: 6s;
+            animation-play-state: running;
+
+        }
+
+
+        .icon {
+            width: 170px;
+            height: 170px;
+            border: 1px solid #FF900E;
+            border-radius: 8px;
+            align-items: center;
+            margin: 0px;
+            padding: 0px;
+            margin-right: 0px;
+            padding-right: 0px;
+            gap: 0px;
+            margin-left: 10px;
+        }
+
+        .icon-img {
+            width: 30px;
+            height: 30px;
+            margin: 0px;
+            padding: 0px;
+            padding-top: 30px;
+            gap: 0px;
+
+        }
+
+        .nothing {
+            margin: 0px;
+            padding: 0px;
+            color: #424242;
+            gap: 0px;
+        }
+
+        .text {
+            font-weight: 400;
+            font-size: 16px;
+            color: #727272;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .sponspors {
+            margin-bottom: 100px;
+        }
+
+        .our {
+            font-weight: 700;
+            font-size: 45px;
+            text-align: center;
+            margin-top: 160px;
+            padding-top: 0px;
+            margin-bottom: 20px;
+        }
+
+        .lorem5 {
+            font-weight: 400;
+            font-size: 16px;
+            color: #727272;
+            text-align: center;
+            margin-top: 0px;
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: row;
+            margin-left: 150px;
+            text-align: center;
+            width: 100px;
+            height: 40px;
+            margin-top: 50px;
+            padding-top: 0px;
+            gap: 100px;
+        }
+
+        .logo1 {
+            color: #727272;
+            mix-blend-mode: luminosity;
+        }
+
+        .logo2 {
+            mix-blend-mode: luminosity;
+        }
+
+        .logo3 {
+            mix-blend-mode: luminosity;
+        }
+
+        .logo4 {
+            color: #727272;
+            mix-blend-mode: luminosity;
+        }
+
+        .sajed {
+            text-align: center;
+            font-size: 50px;
+            color: aqua;
+            margin-bottom: 0px;
+        }
+
+        .web-development {
+            font-size: 30px;
+            text-align: center;
+            color: darkviolet;
+        }
+
+        .motivation {
+            color: red;
+            text-align: center;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        footer {
+            font-weight: 800;
+            font-size: 20px;
+            color: #424242;
+            text-align: center;
+            padding: auto;
+            background: #FFF4E7;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-left: 140px;
+            padding-left: 130px;
+            padding-right: 130px;
+            width: 800px;
+            margin-bottom: 200px;
+        }
+
+        @media screen and (max-width:576px) {
+
+            .g3 {
+                margin-left: 0px;
+                padding-left: 0px;
+                margin-right: 0px;
+                padding-right: 0px;
+                margin-top: 0px;
+                padding-top: 0px;
+            }
+
+            .button-explore {
+                margin-left: 120px;
+            }
+
+            nav ul {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .banner-img {
+                width: 100%;
+            }
+
+            .future {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .quick-list {
+                display: flex;
+                flex-direction: column;
+                margin-left: 0px;
+                padding-left: 0px;
+            }
+
+            .team {
+                display: flex;
+                flex-direction: column;
+                margin-left: 0px;
+                padding-left: 100px;
+            }
+
+            .g3 {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .experience {
+                flex-direction: column;
+            }
+
+            .lorem1 {
+                padding-left: 0px;
+                margin-left: 0px;
+                color: #727272;
+                padding-top: 400px;
+            }
+
+            .list {
+                padding-left: 0px;
+            }
+
+            .button-explore-more {
+                padding-left: 0px;
+                margin-left: 0px;
+            }
+
+            .love-enjoy {
+                text-align: center;
+                margin-left: 0px;
+            }
+
+            .lorem2 {
+                text-align: center;
+                margin-left: 0px;
+            }
+
+            .border {
+                margin-left: 0px;
+                width: 370px;
+                height: 250px;
+            }
+
+            .architects-img {
+                width: 100%;
+                margin-left: 0px;
+                padding-left: 0px;
+            }
+
+            .button-year {
+                margin-left: 10px;
+            }
+
+            .some-fact {
+                margin-left: 0px;
+            }
+
+            .lorem4 {
+                margin-left: 0px;
+            }
+
+            .icons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .logo {
+                flex-direction: column;
+            }
+
+            .sajidul {
+                margin-top: 500px;
+            }
+
+            .motivation {
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+
+            footer {
+                font-weight: 800;
+                font-size: 20px;
+                color: #424242;
+                text-align: start;
+
+                background: #FFF4E7;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                margin-left: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+                width: 370px;
+                margin-bottom: 200px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -145,7 +740,8 @@
         <section class="sajidul">
             <h2 class="sajed">SAJIDUL BARI</h2>
             <h2 class="web-development">Web development</h2>
-            <p class="motivation">For me, programming fascinated me in the aspect of all the programs and applications you can make with
+            <p class="motivation">For me, programming fascinated me in the aspect of all the programs and applications
+                you can make with
                 it. After researching different programming languages I really got into HTML and CSS. <br> <br>
 
                 I first started to learn programming for finding out of curiosity. Then I started an online store with
